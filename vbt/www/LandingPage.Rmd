@@ -1,0 +1,99 @@
+---
+bibliography: references.bib
+---
+
+# **Greenhouse Performance VBT Coaches Tool**
+
+------------------------------------------------------------------------
+
+Welcome to our Velocity Based Training (VBT) web app, designed for strength coaches and trainers who want to improve their athletes' performance. Our Shiny web app allows you to upload your own VBT data for analysis, providing you with key metrics and insights to help you create effective training plans.
+
+With our app, you can access four dashboards that cater to different aspects of VBT analysis. The Historical Review dashboard shows you a chronological view of data for the selected athlete and exercise. This dashboard has three graphs and four tables that help you track an athlete's progress over time. The Session Comparison dashboard enables you to compare two load-velocity profiles against each other, providing you with key calculated outputs for each session. The Training Planner dashboard allows you to filter a specific training session by exercise, athlete, and date, to gain specific training targets for that athlete based on the data collected. Finally, the Team Table dashboard shows you all athletes' training data on a particular date.
+
+Each dashboard provides comprehensive data analysis that can help you identify an athlete's strengths and weaknesses, monitor progress, and develop personalized training plans. Our app's user-friendly interface and easy-to-use features make it an ideal tool for coaches and trainers, regardless of their experience with VBT.
+
+So, whether you are a seasoned strength coach or a beginner, our VBT web app can help you analyze your data and develop effective training plans for your athletes. Sign up now and take your coaching to the next level!
+
+## \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+
+## **Instructions:**
+
+The app comes loaded with example data to show how the app functions and give examples of it's use. Although this is nice for educational purposes, you can upload your own data to explore and use the app in your own practice. Below are instructions on how to properly collect data to be used in the app, and how to upload it into the site for your own use.
+
+1.  Collect the data needed for the app by conducting a Load-Velocity Profile with your athlete/athletes. For more details on how this is done, see below for more futher instructions and examples.
+
+2.  If this is your first time using the app, download the template file by clicking the green button in the sidebar.
+
+3.  Input / Copy your data in the correct columns of the template file. Notice the help text in the template file to ensure you use the correct formatting for the data.
+
+4.  Return to the page and upload you personal data into the app by using the loader in the sidebar. Select the 'upload' button to open the file viewer on your device and select the appropriate file.
+
+**\* Ensure you save the data file as a .csv file.**
+
+**\* If you are returning to the site or have downloaded the template before, you can save the file and continue to add to it over time.**
+
+**\* This version of the app is only set up for specific exercises based on the scientific literature that was available at the time of creation\... Bench Press, Prone Bench Pull, Prone Pull-Up, Seated Military Press, Lat Pulldown, Seated Cable Row, Squat, Deadlift, Hip-Thrust, Leg Press. While other exercises could be used in theory, I only included exercises with published values for Minimum Velocity Threshold (MVT)**
+
+## \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+
+## App Components:
+
+### Historical View
+
+The Historical Review allows the user to view the data of the selected athlete , in the selected exercise, from a chronological perspective. The dashboard has 3 graphs and 4 tables. The graphs show: A date x date Estimated 1 Rep Max line graph, A date x date *'Power Factor'* (area under the curve or AUC) line graph, and lastly a combo bar graph showing both side by side. The tables show the same data at different levels per each session. The first table shows the a summary of each date matching the graphs. The second table shows the best repetition from each load on each date based on velocity. The third graph shows the average velocity and power for each load on each date. The last table shows all reps at all loads on each date.
+
+### Session Comparisons
+
+The Session Comparison dashboard allows the user to compare any 2 load-velocity profiles against each other. After the user selects an exercise, the dashboard gives them options of all athletes and dates in the data that have profiles. The user can then select 2 sessions by a single athlete (or multiple) and dates to compare against. The dashboard shows a table for each of the selected sessions, giving the Loads used with the velocites and power reached. The user will also see key calculated outputs: Estimated 1 Rep Max, Power Factor (AUC), Absolute Velocity (Velocity at 0 Load), and Theoretical Peak Force (Force at 0 Velocity). The dashboard also shows 2 graphs with both sessions' data plotted. The first graph is a Load-Velocity profile, which takes the Load lifted (x-axis) and plots it against the Velocity achieved (y-axis) in a linear regression model. The second graph shows a similar graph to the first, but using Power instead of Velocity, and using a 2nd order polynomial model instead of a linear regression.
+
+### Training Recommendations 
+
+The Training Planner dashboard allows the user to filter to a specific training session by exercise, athlete, and date, to gain specific training targets for that athlete based on the data collected in that session. There are 3 components to the dashboard: Training Velocity Zones, Load-Velocity Profile with Zones, and Intensity Training Zones. The Training Velocity Zones give the user specific velocity ranges that would target given training adaptations. The Load-Velocity Profile with zones, shows a graph of the athletes Load-Velocity linear regression with the same training adaptation zones highlighted on the graph. The Intensity Training Zones component is a table that matches a bar velocity to a subjective training intensity on a 4-10 scale. 10 being the most intense (maximum), and 4 being the least intense (light).
+
+The Team Table is 2 tables in one, a Load table and a Velocity table. The user can filter to a session based on exercise and date, and is given a table of all athletes that trained on that date. Similar to the training recommendation dashboard, the table shows each athletes expected Velocity, or Load, based on a percentage of their Estimated 1 Rep Max from that day (from 50% to 100%). The user can toggle between the Velocity and Load tables to match a percentage of Rep Max with anticipated Velocity or Load.
+
+## \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+
+## How To Guides:
+
+### **Collecting Data**
+
+#### The Load-Velocity Profile
+
+A Load-Velocity profile is a useful tool to help individuals, coaches, and trainers to determine the optimal load for a given exercise. The idea is to measure the velocity of movement at different loads to create a profile that shows the relationship between load and velocity. This profile can help individuals to choose the appropriate load for their training goals and maximize their performance.
+
+For example, to conduct a Load-Velocity profile for the Back Squat, the following steps can be taken:
+
+1.  **Warm-up:** Begin by warming up with a few sets of light squats to get the body prepared for the exercise.
+
+2.  **Select the starting load:** Choose a starting load that is around 50% of the individual's estimated one-rep max (1RM).
+
+3.  **Perform the exercise:** Complete a set of Back Squats with the selected load. Record the velocity of the bar and the power output of the repetition using a velocity measuring device, such as a linear position transducer or a velocity-based training device.
+
+4.  **Increase the load:** Increase the load by 5-10% and repeat the exercise. Record the velocity and power again.
+
+5.  **Continue to increase the load:** Repeat step 4 until the individual reaches a load that causes them to slow down significantly or reach a point where they cannot complete a repetition with good form. \*\* A minimum of 4 different loads is ideal.
+
+**Example:**
+
+Let's say an individual's 1RM for the Back Squat is 200 kg. They would start with a load of 100 kg and complete a set of 5 repetitions, recording the velocity of the bar at the bottom of the squat. They would then increase the load by 10 kg and repeat the exercise until they reach a load of 180 kg. The recorded velocities and corresponding loads would be plotted on a graph to create the Load-Velocity profile.
+
+#### Considerations
+
+1.  **Choosing The Velocity Variable:** Almost all bar velocity measuring devices will give you options of 'Mean' and 'Peak' velocity. You can use either within the app but stay consistent within your exercise. You can decide to use 'Peak' for the Back Squat, but 'Mean' for the Deadlift if you choose. Ensure you take note for yourself with future collection.
+
+2.  **Mean Power:** When recording Power, it is suggested that you use 'Mean Propulsive Power'. While you can use Peak Power, it is not recommended as Peak power tends to be less reliable. Using the most reliable metrics will greatly enhance the validity of your data and the outputs in the application.
+
+3.  **Metric System:** The app is set up to display units in metric measures (ie. m/s, kg). While the app will still work if imperial units are provided, the displayed output text is not set up to convert and will always display as metric units.
+
+4.  **All Reps:** The app was designed to sort through all reps collected for each load/set. It is recommended that you do your best to record all reps when conducting your LV profile. While this is the case, it is permissible to provide the best rep of each set determined by the highest velocity.
+
+### Using The App
+
+#### Interpreting Changes In Historical Data
+
+#### Key Calculated Metrics
+
+#### Comparing Training Sessions
+
+#### Training With Velocity Zones
