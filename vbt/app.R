@@ -24,7 +24,7 @@ ui <- dashboardPage(
             class="dropdown", 
             tags$a(
                 # link reference
-                href="https://github.com/project-greenhouse/vbt-trial",
+                href="https://github.com/project-greenhouse/vbt",
                 # icon
                 icon("github"), 
                 # display text
@@ -428,7 +428,7 @@ ui <- dashboardPage(
                     #### Row 2 -----
                     fluidRow(
                         column(
-                            width = 4,
+                            width = 5,
                             box(
                                 title = "Training Velocity Zones",
                                 width = 12,
@@ -481,7 +481,7 @@ ui <- dashboardPage(
                             )
                         ),
                         column(
-                            width = 8,
+                            width = 7,
                             box(
                                 title = "Load-Velocity Profile",
                                 width = 12,
